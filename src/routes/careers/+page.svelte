@@ -13,7 +13,7 @@
 		lead:
 			'We are a growing pharmaceutical manufacturer blending scientific rigor with practical compassion. From formulation to field support, you will work with multidisciplinary experts who put patients and partners first.',
 		image: {
-			src: '/images/placeholders/joinourteam.jpg',
+			src: '/images/placeholders/joinourteam.avif',
 			alt: 'Team of pharmaceutical professionals collaborating at a daylight-filled workspace.'
 		},
 		stats: [

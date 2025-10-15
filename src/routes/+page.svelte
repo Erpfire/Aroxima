@@ -1,19 +1,20 @@
 <script lang="ts">
-	import HeroSection from '$lib/sections/HeroSection.svelte';
-	import AboutMetricsSection from '$lib/sections/AboutMetricsSection.svelte';
-	import DivisionsSection from '$lib/sections/DivisionsSection.svelte';
-	import VisionStrip from '$lib/sections/VisionStrip.svelte';
-	import ProductHighlightsSection from '$lib/sections/ProductHighlightsSection.svelte';
-	import ResearchQualitySection from '$lib/sections/ResearchQualitySection.svelte';
-	import ImpactNotesSection from '$lib/sections/ImpactNotesSection.svelte';
-	import ContactSection from '$lib/sections/ContactSection.svelte';
-	import ComplianceFooter from '$lib/sections/ComplianceFooter.svelte';
-	import QuickCta from '$lib/sections/QuickCta.svelte';
+import HeroSection from '$lib/sections/HeroSection.svelte';
+import AboutMetricsSection from '$lib/sections/AboutMetricsSection.svelte';
+import DivisionsSection from '$lib/sections/DivisionsSection.svelte';
+import VisionStrip from '$lib/sections/VisionStrip.svelte';
+import ProductHighlightsSection from '$lib/sections/ProductHighlightsSection.svelte';
+import ResearchQualitySection from '$lib/sections/ResearchQualitySection.svelte';
+import ImpactNotesSection from '$lib/sections/ImpactNotesSection.svelte';
+import ContactSection from '$lib/sections/ContactSection.svelte';
+import ComplianceFooter from '$lib/sections/ComplianceFooter.svelte';
+import QuickCta from '$lib/sections/QuickCta.svelte';
+import { catalog, divisions } from '$lib/products/catalog';
 
 	const heroContent = {
 		title: 'Innovative solutions for a healthier world.',
 		lead: 'In a recovering world, Aroxima Lifesciences advances modern medicine with care, courage, and science.',
-		backgroundImage: '/images/placeholders/hero-rebirth.jpg',
+		backgroundImage: '/images/placeholders/hero-rebirth.avif',
 		primaryCta: {
 			label: 'Explore Divisions',
 			href: '/products'
@@ -30,7 +31,7 @@
 		body: 'Aroxima Lifesciences is an Indian pharmaceutical manufacturer committed to accessible, high-quality medicines across key therapeutic areas. We work with rigorous quality practices and a people-first mission.',
 		metrics: ['60+ Products', '320+ Team Members', '600+ Happy Clients'],
 		image: {
-			src: '/images/placeholders/about-lab-team.png',
+			src: '/images/placeholders/about-lab-team.avif',
 			alt: 'Researchers collaborating inside a bright pharmaceutical laboratory.'
 		}
 	};
@@ -44,7 +45,7 @@
 				name: 'Cardiac Division',
 				line: 'Therapies focused on cardiovascular wellness.',
 				image: {
-					src: '/images/placeholders/division-cardiac.jpeg',
+					src: '/images/placeholders/division-cardiac.avif',
 					alt: 'Cardiac monitor waveform overlayed on a clinician review.'
 				},
 				href: '/products?division=cardiac'
@@ -53,7 +54,7 @@
 				name: 'General Division',
 				line: 'Everyday essentials built on rigorous standards.',
 				image: {
-					src: '/images/placeholders/division-general.jpg',
+					src: '/images/placeholders/division-general.avif',
 					alt: 'Array of capsule medicines organised on a light table.'
 				},
 				href: '/products?division=general'
@@ -62,7 +63,7 @@
 				name: 'Ophthalmic Division',
 				line: 'Precise eye-care formulations.',
 				image: {
-					src: '/images/placeholders/division-ophthalmic.png',
+					src: '/images/placeholders/division-ophthalmic.avif',
 					alt: 'Macro shot of a lab technician inspecting an optical lens.'
 				},
 				href: '/products?division=ophthalmic'
@@ -74,82 +75,29 @@
 		headline: 'Rebuilding health beyond boundaries.',
 		body: 'From supply to science, we strengthen care where it matters most—turning uncertainty into measurable outcomes for patients and partners.',
 		image: {
-			src: '/images/placeholders/vision-cinemagraph.png',
+			src: '/images/placeholders/vision-cinemagraph.avif',
 			alt: 'Soft daylight view of a resilient city skyline with greenery emerging.'
 		}
 	};
+
+	const divisionLabelById = new Map(divisions.map((division) => [division.id, division.name]));
+
+	const highlightedProducts = catalog.slice(0, 5).map((item) => ({
+		name: item.name,
+		division: divisionLabelById.get(item.divisionId) ?? item.divisionId,
+		short_line: item.summary,
+		image: item.image,
+		cta: {
+			label: 'View division',
+			href: `/products?division=${item.divisionId}`
+		}
+	}));
 
 	const productContent = {
 		title: 'Product highlights',
 		subtitle:
 			'A preview of the formulations empowering practitioners and patients across our divisions.',
-		products: [
-			{
-				name: 'Aroxima-C',
-				division: 'Cardiac',
-				short_line: 'Targeted support curated with cardiology experts.',
-				image: {
-					src: '/images/placeholders/product-1.jpg',
-					alt: 'Pharmaceutical blister pack with green glow cues.'
-				},
-				cta: {
-					label: 'View division',
-					href: '/products?division=cardiac'
-				}
-			},
-			{
-				name: 'Aroxima-G',
-				division: 'General',
-				short_line: 'Daily-use reliability for essential care pathways.',
-				image: {
-					src: '/images/placeholders/product-2.jpg',
-					alt: 'Collection of labeled medicine bottles on a counter.'
-				},
-				cta: {
-					label: 'View division',
-					href: '/products?division=general'
-				}
-			},
-			{
-				name: 'Aroxima-O',
-				division: 'Ophthalmic',
-				short_line: 'Focused clarity for specialised eye care.',
-				image: {
-					src: '/images/placeholders/product-3.jpg',
-					alt: 'Close up of ophthalmic dropper bottle with light reflections.'
-				},
-				cta: {
-					label: 'View division',
-					href: '/products?division=ophthalmic'
-				}
-			},
-			{
-				name: 'Reviva-Plus',
-				division: 'General',
-				short_line: 'Multivitamin essentials designed for resilience.',
-				image: {
-					src: '/images/placeholders/product-4.jpg',
-					alt: 'Stacked capsules and pills with a soft daylight background.'
-				},
-				cta: {
-					label: 'View division',
-					href: '/products?division=general'
-				}
-			},
-			{
-				name: 'CardioShield',
-				division: 'Cardiac',
-				short_line: 'Cardioprotective formulations aligned with GMP protocols.',
-				image: {
-					src: '/images/placeholders/product-5.jpg',
-					alt: 'Ampoules arranged next to cardiac monitoring equipment.'
-				},
-				cta: {
-					label: 'View division',
-					href: '/products?division=cardiac'
-				}
-			}
-		]
+		products: highlightedProducts
 	};
 
 	const researchContent = {
@@ -157,7 +105,7 @@
 		body: 'Our R&D teams co-create with clinicians to refine formulations and introduce new therapies with consistent quality benchmarks.',
 		chips: ['GMP-aligned practices', 'Quality-first processes', 'Continuous improvement'],
 		image: {
-			src: '/images/placeholders/research-lab.jpg',
+			src: '/images/placeholders/research-lab.avif',
 			alt: 'Scientist handling lab glassware under bright ambient light.'
 		},
 		link: {
@@ -253,7 +201,7 @@
 		property="og:description"
 		content="Indian pharmaceutical manufacturer across Cardiac, General, and Ophthalmic divisions. 60+ products, 600+ clients."
 	/>
-	<meta property="og:image" content="/images/placeholders/og-hero.jpg" />
+	<meta property="og:image" content="/images/placeholders/og-hero.avif" />
 	<meta property="og:type" content="website" />
 </svelte:head>
 

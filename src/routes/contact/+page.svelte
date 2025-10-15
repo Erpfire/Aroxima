@@ -22,7 +22,7 @@
 			}
 		],
 		image: {
-			src: '/images/placeholders/hearttreatment.jpg',
+			src: '/images/placeholders/hearttreatment.avif',
 			alt: 'Daylight-lit meeting space with pharmaceutical professionals collaborating.'
 		}
 	};
@@ -78,7 +78,7 @@
 			}
 		],
 		image: {
-			src: '/images/placeholders/medicinelocation.png',
+			src: '/images/placeholders/medicinelocation.avif',
 			alt: 'Stylised map of India highlighting Mumbai and Jamnagar locations.'
 		}
 	};

@@ -215,14 +215,14 @@ static/images/placeholders/...
 * **Placeholders** (you’ll replace later):
 
   ```
-  /images/placeholders/hero-rebirth.jpg
-  /images/placeholders/about-lab-team.jpg
-  /images/placeholders/division-cardiac.jpg
-  /images/placeholders/division-general.jpg
-  /images/placeholders/division-ophthalmic.jpg
-  /images/placeholders/product-*.jpg (1..8)
-  /images/placeholders/research-lab.jpg
-  /images/placeholders/india-map.jpg
+  /images/placeholders/hero-rebirth.avif
+  /images/placeholders/about-lab-team.avif
+  /images/placeholders/division-cardiac.avif
+  /images/placeholders/division-general.avif
+  /images/placeholders/division-ophthalmic.avif
+  /images/placeholders/product-*.avif (1..8)
+  /images/placeholders/research-lab.avif
+  /images/placeholders/india-map.avif
   ```
 * **Alt text:** write meaningful, non-marketing descriptions (accessibility).
 
@@ -286,7 +286,7 @@ static/images/placeholders/...
 
 * `<title>Aroxima Lifesciences — Innovative solutions for a healthier world</title>`
 * Meta description: “Indian pharmaceutical manufacturer across Cardiac, General, and Ophthalmic divisions. 60+ products, 600+ clients.”
-* OpenGraph image: `/images/placeholders/og-hero.jpg`
+* OpenGraph image: `/images/placeholders/og-hero.avif`
 * No health claims. Add `robots` allow. Canonical for `/`.
 
 ---
@@ -345,5 +345,4 @@ static/images/placeholders/...
 * We reflected **division/product category language** and **quality/affordability emphasis** from Shield & Care’s public site (content only; not their layout/styles). ([shieldandcarepharma.in][3])
 
 ---
-
 

@@ -40,7 +40,7 @@ export const divisions: ProductDivision[] = [
 			'Quick-reference guides for hospital pharmacy teams'
 		],
 		image: {
-			src: '/images/placeholders/cardiovascular.png',
+			src: '/images/placeholders/cardiovascular.avif',
 			alt: 'Clinician reviewing ECG output next to cardiac care supplies.'
 		},
 		accent: 'life'
@@ -57,7 +57,7 @@ export const divisions: ProductDivision[] = [
 			'SRLs and COAs available on request for each batch'
 		],
 		image: {
-			src: '/images/placeholders/division-general.jpg',
+			src: '/images/placeholders/division-general.avif',
 			alt: 'Array of capsule and tablet packs organised on a bright surface.'
 		},
 		accent: 'rust'
@@ -74,7 +74,7 @@ export const divisions: ProductDivision[] = [
 			'Guidance leaflets written for ophthalmology practice teams'
 		],
 		image: {
-			src: '/images/placeholders/eyedrops.jpg',
+			src: '/images/placeholders/eyedrops.avif',
 			alt: 'Technician handling ophthalmic dropper bottles under cleanroom lighting.'
 		},
 		accent: 'sun'
@@ -91,7 +91,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Composition: Resveratrol, EPA, DHA, Grape Seed Extract, Zinc, Selenium, Vitamin D3.',
 		tags: ['resveratrol', 'omega-3', 'vitamin d3'],
 		image: {
-			src: '/images/placeholders/aroxima.png',
+			src: '/images/placeholders/aroxima.avif',
 			alt: 'Placeholder packaging for Aroxima-D Tablet.'
 		}
 	},
@@ -104,7 +104,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Strength: Moxifloxacin 0.5% w/v.',
 		tags: ['moxifloxacin', 'ophthalmic anti-infective'],
 		image: {
-			src: '/images/placeholders/opticmox.jpeg',
+			src: '/images/placeholders/opticmox.avif',
 			alt: 'Placeholder dropper bottle representing Opticomox Eye Drops.'
 		}
 	},
@@ -117,7 +117,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Actives: Moxifloxacin with Loteprednol Etabonate.',
 		tags: ['moxifloxacin', 'loteprednol'],
 		image: {
-			src: '/images/placeholders/opticmoxlp.jpeg',
+			src: '/images/placeholders/opticmoxlp.avif',
 			alt: 'Placeholder ophthalmic suspension bottle for Opticomox LP.'
 		}
 	},
@@ -130,7 +130,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Composition: Sodium Carboxymethyl Cellulose and Glycerin.',
 		tags: ['ocular lubrication', 'dry eye relief'],
 		image: {
-			src: '/images/placeholders/nepamg.jpeg',
+			src: '/images/placeholders/nepamg.avif',
 			alt: 'Placeholder single-use vials for Nepam G lubricating drops.'
 		}
 	},
@@ -143,7 +143,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Composition: Sodium Hyaluronate, PEG 400, Propylene Glycol.',
 		tags: ['ocular surface', 'dry eye care'],
 		image: {
-			src: '/images/placeholders/nepamppg.jpeg',
+			src: '/images/placeholders/nepamppg.avif',
 			alt: 'Placeholder depiction of Nepam PPG lubricating eye drops.'
 		}
 	},
@@ -157,7 +157,7 @@ export const catalog: ProductItem[] = [
 			'Mechanism: Lowers hepatic glucose production, delays glucose absorption, increases insulin sensitivity.',
 		tags: ['type 2 diabetes', 'pcos', 'biguanide'],
 		image: {
-			src: '/images/placeholders/product-3.jpg',
+			src: '/images/placeholders/product-3.avif',
 			alt: 'Placeholder blister pack for Metformin tablets.'
 		}
 	},
@@ -170,7 +170,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Administration: Take with food as prescribed; continue as directed by the physician.',
 		tags: ['type 2 diabetes', 'combination therapy', 'gliclazide'],
 		image: {
-			src: '/images/placeholders/product-4.jpg',
+			src: '/images/placeholders/product-4.avif',
 			alt: 'Placeholder tablet bottle for Metformin G.'
 		}
 	},
@@ -183,7 +183,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Strength: Sodium Hyaluronate 0.1% w/v.',
 		tags: ['sodium hyaluronate', 'ocular hydration'],
 		image: {
-			src: '/images/placeholders/product-5.jpg',
+			src: '/images/placeholders/product-5.avif',
 			alt: 'Placeholder depiction of Hylosm sodium hyaluronate drops.'
 		}
 	},
@@ -197,7 +197,7 @@ export const catalog: ProductItem[] = [
 		presentation: 'Usage: Take without food under medical guidance; continue for the prescribed duration.',
 		tags: ['gerd', 'acid reflux', 'combination therapy'],
 		image: {
-			src: '/images/placeholders/product-3.jpg',
+			src: '/images/placeholders/product-3.avif',
 			alt: 'Placeholder capsule packaging for Arozol-DSR.'
 		}
 	}

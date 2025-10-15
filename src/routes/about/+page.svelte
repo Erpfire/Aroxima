@@ -13,7 +13,7 @@
     title: 'Building reliable access to quality medicines.',
     lead:
       'Aroxima Lifesciences is an Indian pharmaceutical manufacturer focused on accessible, high‑quality formulations across key therapeutic areas. Our work blends scientific rigor with a people‑first mindset.',
-    image: { src: '/images/placeholders/qualitymedicine.webp', alt: 'A collaborative lab team at work.' },
+    image: { src: '/images/placeholders/qualitymedicine.avif', alt: 'A collaborative lab team at work.' },
     primary: { label: 'Explore Products', href: '/products' },
     secondary: { label: 'Research & Quality', href: '/research' }
   };
