@@ -1,0 +1,349 @@
+# Aroxima — Homepage Spec-Kit (Build-Ready)
+
+## 0) Tech + Project Setup
+
+* **Stack:** SvelteKit 2 / **Svelte 5**, TailwindCSS, TypeScript optional.
+* **Folders**
+
+  * `src/routes/+page.svelte` (homepage)
+  * `src/lib/sections/*` (split sections)
+  * `static/images/placeholders/*` (all temp images live here)
+  * `src/lib/theme/tokens.css` (CSS variables)
+* **Fonts:** Google Fonts — `Cinzel` (display, heroic serif) + `Inter` (body).
+* **Tailwind Config:** enable container & animations; add safelist for glow utilities.
+* **Components:** Use lots of components. Each major section should be inside its own component.
+---
+
+## 1) Theme Direction — “Rebirth of Science”
+
+* **Not dark theme.** Soft daylight with warm, dusty undertone + biotech green glow accents.
+* **Core palette (CSS vars in `tokens.css`):**
+
+  ```css
+  :root{
+    --bg-base:#f4f2ec;          /* dusty parchment daylight */
+    --bg-elev:#ffffffcc;        /* glass panels */
+    --ink:#1c1f1b;              /* body text */
+    --muted:#5e615a;            /* secondary text */
+    --life:#4a935c;             /* revival green (primary) */
+    --rust:#a86f3c;             /* oxidized accent */
+    --sun:#f8e5b2;              /* hope light */
+    --border:#e5dfcf;           /* soft border */
+    --shadow:0 28px 60px -18px rgba(40,50,25,.25);
+    --radius:18px;
+    --blur:18px;
+  }
+  ```
+* **Atmospherics:** subtle parallax **dust/fog/motes** layers; very slow drift; reduced-motion safe.
+* **Layout tone:** **lots** of white space, long scroll, large typographic scale.
+
+---
+
+## 2) Page Structure (Sections & Purpose)
+
+> Home is the **trailer**. Deeper detail lives on About / R&D / Products / Contact pages.
+
+1. **Cinematic Hero — “Reviving the World”**
+2. **About Aroxima (Short) + Metrics**
+3. **Divisions Overview (3): Cardiac / General / Ophthalmic**
+4. **Vision Strip — Narrative Cinematic**
+5. **Product Highlights (teaser carousel: 5–8 items, placeholders)**
+6. **Research & Quality Snapshot (teaser)**
+7. **Impact Notes / Micro-testimonials (2–3 quotes)**
+8. **Contact & Offices (Mumbai + Jamnagar) + Quick CTA**
+9. **Compliance Disclaimer + Footer**
+
+---
+
+## 3) Copy Guide (Narrative Cinematic; placeholders where needed)
+
+### 1) Hero
+
+* **Title:** *Innovative solutions for a healthier world.*
+* **Lead:** “In a recovering world, Aroxima Lifesciences advances modern medicine with care, courage, and science.”
+* **Buttons:** `Explore Divisions` | `Our Vision`
+* **Background:** full-bleed image/video placeholder: `images/placeholders/hero-rebirth.jpg`
+
+  * Mood: soft daylight over a reclaimed cityscape with green growth (no “broken lab”).
+* **Sub-cue:** “Scroll to explore ↓”
+
+> We keep the official tagline exactly as provided: *Innovative solutions for a healthier world.*
+
+### 2) Short About + Metrics
+
+* **Headline:** “Science with purpose.”
+* **Para (inspired by reference; rewritten):**
+  “Aroxima Lifesciences is an Indian pharmaceutical manufacturer committed to accessible, high-quality medicines across key therapeutic areas. We work with rigorous quality practices and a people-first mission.” ([shieldandcarepharma.in][1])
+* **Stats (your numbers):**
+  `60+ Products` • `320+ Team Members` • `600+ Happy Clients`
+* **Side image placeholder:** `images/placeholders/about-lab-team.jpg`
+
+> (Reference site emphasizes Indian pharma identity, quality, and affordability; we preserve that spirit without copying text.) ([shieldandcarepharma.in][1])
+
+### 3) Divisions (3 cards)
+
+* **Cards:** Cardiac Division • General Division • Ophthalmic Division (yours)
+* **Each card:**
+
+  * Symbolic image placeholders:
+    `cardiac.jpg` (heart waveform), `general.jpg` (capsule array), `ophthalmic.jpg` (lens macro)
+  * One-liner:
+
+    * Cardiac: “Therapies focused on cardiovascular wellness.”
+    * General: “Everyday essentials built on rigorous standards.”
+    * Ophthalmic: “Precise eye-care formulations.”
+
+### 4) Vision Strip
+
+* **Headline:** “Rebuilding health beyond boundaries.”
+* **Narrative (short):**
+  “From supply to science, we strengthen care where it matters most—turning uncertainty into measurable outcomes for patients and partners.”
+
+### 5) Product Highlights (Teaser)
+
+* **Carousel of 5–8 items** using placeholders (no real claims, names can be generic like “Aroxima-C” unless you prefer real product names later).
+* **Card data model:** `{name, division, short_line, image, cta}`
+* **Example placeholders:**
+
+  * Aroxima-C (Cardiac) — “Targeted support as guided by clinicians.”
+  * Aroxima-G (General) — “Daily-use reliability.”
+  * Aroxima-O (Ophthalmic) — “Focused clarity.”
+* (If you want to seed with real-sounding generic categories, the reference lists product types like multivitamins, antibiotics, anti-emetic, proton-pump inhibitors; we can echo **categories** only, not their brand names.) ([shieldandcarepharma.in][2])
+
+### 6) Research & Quality Snapshot (Teaser)
+
+* **Chips:** “GMP-aligned practices” • “Quality-first processes” • “Continuous improvement”
+* **Short blurb (paraphrase of reference commitments):**
+  “We follow disciplined, quality-first routines and continuously improve to meet demanding standards.” ([shieldandcarepharma.in][1])
+* **CTA:** `Explore our R&D` → /research
+
+### 7) Impact Notes / Micro-Testimonials
+
+* 2–3 short quotes (placeholders):
+  “Their responsiveness and consistent quality set them apart.” — *Hospital Partner*
+  “Timely supply, dependable outcomes.” — *Distributor*
+
+### 8) Contact & Offices
+
+* **Corporate Office (Mumbai):**
+  Aroxima Lifesciences Private Limited
+  F No-24, 6th Floor, Kalpataru Tower, Santacruz (East),
+  Near International Airport, Mumbai, Maharashtra — 400056
+* **Registered Office (Jamnagar):**
+  Aroxima Lifesciences Private Limited
+  F.No.-302, Shivdarshan Apt., Indraprasth Society, Vasai, Jamnagar,
+  Gujarat — 361006
+* **Contact:** `9910584811` • `aroxima@zohomail.in`
+* **CTA Buttons:** `WhatsApp` (icon only; link later) • `Email`
+* **Mini form (name/email/message)** + inline success/error.
+
+### 9) Compliance Note + Footer
+
+* **Disclaimer:** “Information is for awareness only and not a substitute for professional medical advice. Products intended for markets where registered.”
+* **Footer microline:** “© Aroxima Lifesciences Private Limited. All rights reserved.”
+
+> Reference site shows divisions and product types we echoed at a high level (not their brand names or styles). ([shieldandcarepharma.in][3])
+
+---
+
+## 4) Components & Layout (Svelte 5)
+
+### File map
+
+```
+src/
+  lib/theme/tokens.css
+  lib/components/
+    GlowButton.svelte
+    GlassCard.svelte
+    StatChip.svelte
+    SectionKicker.svelte
+    ImageFrame.svelte
+  lib/sections/
+    Hero.svelte
+    About.svelte
+    Divisions.svelte
+    VisionStrip.svelte
+    ProductsTeaser.svelte
+    ResearchTeaser.svelte
+    ImpactNotes.svelte
+    ContactOffices.svelte
+    FooterBar.svelte
+routes/+page.svelte
+static/images/placeholders/...
+```
+
+### Layout rules (Tailwind)
+
+* **Containers:** `container mx-auto px-6 md:px-10 max-w-[1200px]`
+* **Section spacing:** `py-16 md:py-24`
+* **Cards:** glass style `backdrop-blur-md bg-[var(--bg-elev)] border border-[var(--border)] rounded-[var(--radius)] shadow-[var(--shadow)]`
+* **Headlines:** `font-[Cinzel] tracking-tight`
+* **Lead:** `text-lg md:text-xl text-[var(--muted)] max-w-[70ch]`
+* **Air:** generous `gap-10 md:gap-14` in grids.
+
+---
+
+## 5) Atmospherics & Animation
+
+### Background Layers (Hero + long page)
+
+* `div[data-layer="fog"]` — subtle grain gradient, opacity .25, slow translateY
+* `div[data-layer="motes"]` — tiny circles (CSS generated), slow floating keyframes
+* Parallax: `transform: translateY(var(--scroll-factor))` via CSS sticky container
+
+### Motion tokens (Tailwind `@layer utilities`)
+
+```css
+@keyframes drift { from{transform:translate3d(0,0,0)} to{transform:translate3d(4vmax,2vmax,0)}}
+@keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.02)}}
+```
+
+* Apply micro-pulse to CTA buttons and hero sunbeams (opacity gradient sweep)
+
+### Reduced Motion
+
+* If `prefers-reduced-motion: reduce`, disable all keyframes & parallax.
+
+---
+
+## 6) Imagery Plan (You have 9 images; many placeholders)
+
+* **Use your 9 images** only where realism helps (team, lab close-ups). Wrap each with a consistent **ImageFrame**:
+
+  * Vignette, grain overlay, subtle green rim-light (CSS).
+* **Placeholders** (you’ll replace later):
+
+  ```
+  /images/placeholders/hero-rebirth.jpg
+  /images/placeholders/about-lab-team.jpg
+  /images/placeholders/division-cardiac.jpg
+  /images/placeholders/division-general.jpg
+  /images/placeholders/division-ophthalmic.jpg
+  /images/placeholders/product-*.jpg (1..8)
+  /images/placeholders/research-lab.jpg
+  /images/placeholders/india-map.jpg
+  ```
+* **Alt text:** write meaningful, non-marketing descriptions (accessibility).
+
+---
+
+## 7) Content Tokens (strings your AI can drop in now)
+
+```json
+{
+  "brand": "Aroxima Lifesciences Private Limited",
+  "tagline": "Innovative solutions for a healthier world",
+  "metrics": ["60+ Products","320+ Team Members","600+ Happy Clients"],
+  "divisions": [
+    {"name":"Cardiac Division","line":"Therapies focused on cardiovascular wellness."},
+    {"name":"General Division","line":"Everyday essentials built on rigorous standards."},
+    {"name":"Ophthalmic Division","line":"Precise eye-care formulations."}
+  ],
+  "offices": {
+    "corporate": {
+      "title":"Corporate Office — Mumbai",
+      "lines": [
+        "Aroxima Lifesciences Private Limited",
+        "F No-24, 6th Floor, Kalpataru Tower, Santacruz (East)",
+        "Near International Airport, Mumbai, Maharashtra — 400056"
+      ]
+    },
+    "registered": {
+      "title":"Registered Office — Jamnagar",
+      "lines": [
+        "Aroxima Lifesciences Private Limited",
+        "F.No.-302, Shivdarshan Apt., Indraprasth Society, Vasai",
+        "Jamnagar, Gujarat — 361006"
+      ]
+    }
+  },
+  "contact": {"phone":"9910584811","email":"aroxima@zohomail.in"}
+}
+```
+
+---
+
+## 8) CTAs & Links
+
+* Primary: **Explore Divisions** → `/products`
+* Secondary: **Our Vision** → `/research`
+* Tertiary: **Contact Us** → `/contact`
+* Floating quick-CTA (bottom-right): Mailto for now.
+
+---
+
+## 9) Forms & Validation (minimal on Home)
+
+* **Quick contact (name, email, message)**
+
+  * Validate email, length of message (min 15 chars)
+  * Inline success: “Thanks—our team will reach out shortly.”
+
+---
+
+## 10) SEO & Social
+
+* `<title>Aroxima Lifesciences — Innovative solutions for a healthier world</title>`
+* Meta description: “Indian pharmaceutical manufacturer across Cardiac, General, and Ophthalmic divisions. 60+ products, 600+ clients.”
+* OpenGraph image: `/images/placeholders/og-hero.jpg`
+* No health claims. Add `robots` allow. Canonical for `/`.
+
+---
+
+## 11) Accessibility
+
+* Color contrast ≥ AA
+* Keyboard focus styles visible on all interactive elements
+* `aria-label` on decorative layers; `role="img"` + `aria-label` only where meaningful.
+
+---
+
+## 12) What NOT to include on Home
+
+* Full “Story Timeline” (goes to About)
+* Partner CTA block (goes to Contact/Partner)
+* Logo reveal animation (goes to About)
+* Regulatory news or external statements
+
+---
+
+## 13) Build Notes for the AI
+
+* Compose sections in `+page.svelte` only via imported components; no business logic.
+* Keep every section configurable through small props objects (text + image paths).
+* Centralize palette in `tokens.css` and reference via Tailwind `var(...)`.
+* Ship with large vertical rhythm; min section height ~ `min(90vh, 900px)` for hero.
+
+---
+
+### (Optional) Snippets Your AI Can Paste
+
+**Section shell**
+
+```svelte
+<!-- src/lib/sections/SectionShell.svelte -->
+<section class="py-16 md:py-24 relative">
+  <div class="container mx-auto px-6 md:px-10 max-w-[1200px]">
+    <slot />
+  </div>
+</section>
+```
+
+**Glass card utility**
+
+```svelte
+<div class="backdrop-blur-md bg-[var(--bg-elev)] border border-[var(--border)] rounded-[var(--radius)] shadow-[var(--shadow)]">
+  <slot/>
+</div>
+```
+
+---
+
+## 14) Content provenance (reference you asked me to use)
+
+* We reflected **division/product category language** and **quality/affordability emphasis** from Shield & Care’s public site (content only; not their layout/styles). ([shieldandcarepharma.in][3])
+
+---
+
+

@@ -1,0 +1,19 @@
+:root {
+	--bg-base: #f4f2ec;
+	--bg-elev: #ffffffcc;
+	--ink: #1c1f1b;
+	--muted: #5e615a;
+	--life: #4a935c;
+	--rust: #a86f3c;
+	--sun: #f8e5b2;
+	--border: #e5dfcf;
+	--shadow: 0 28px 60px -18px rgba(40, 50, 25, 0.25);
+	--radius: 18px;
+	--blur: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		scroll-behavior: auto;
+	}
+}

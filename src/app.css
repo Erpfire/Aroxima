@@ -1,0 +1,47 @@
+@import './lib/theme/tokens.css';
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@layer base {
+	html {
+		background: var(--bg-base);
+		color: var(--ink);
+		font-family:
+			'Inter',
+			'Inter var',
+			-apple-system,
+			BlinkMacSystemFont,
+			'Segoe UI',
+			sans-serif;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		min-height: 100vh;
+		background: none;
+	}
+
+	::selection {
+		background: var(--sun);
+		color: var(--ink);
+	}
+
+	a {
+		color: var(--life);
+	}
+
+	a:hover {
+		color: color-mix(in srgb, var(--life) 80%, var(--rust));
+	}
+
+	*:focus-visible {
+		outline: 2px solid var(--rust);
+		outline-offset: 4px;
+		border-radius: 4px;
+	}
+}
+
+.font-display {
+	font-family: 'Cinzel', 'Times New Roman', serif;
+}

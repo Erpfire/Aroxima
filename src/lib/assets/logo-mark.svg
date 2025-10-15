@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+	<rect width="512" height="512" rx="140" fill="url(#bg)" />
+	<g filter="url(#glow)">
+		<circle cx="256" cy="256" r="168" fill="url(#core)" />
+	</g>
+	<g fill="#ffffffaa">
+		<circle cx="256" cy="182" r="60" opacity="0.2" />
+		<circle cx="174" cy="278" r="50" opacity="0.18" />
+		<circle cx="338" cy="302" r="46" opacity="0.18" />
+	</g>
+	<g>
+		<path
+			fill="#4a935c"
+			d="M256 146c30.928 0 68.24 12.337 83.664 36.31 10.934 16.715 5.998 32.55-5.684 43.12-24.378 21.918-63.787 24.996-77.98 55.218-3.96 8.558-5.388 18.906-6.65 28.828-2.011 16.013-3.82 30.36-15.35 42.47-10.824 11.351-33.085 15.871-50.7 6.58-15.739-8.103-22.766-24.787-24.24-37.258-4.638-40.034 39.379-108.883 71.31-143.097C235.2 155.609 245.59 146 256 146Z"
+		/>
+		<path
+			fill="#a86f3c"
+			d="M332.283 192.61c33.971 13.92 58.175 47.87 55.526 83.504-1.81 24.225-16.786 39.46-32.929 47.109-34.053 16.125-75.264 6.477-104.25 31.157-7.345 6.28-12.703 15.41-18.252 24.164-9.038 14.402-17.114 27.883-33.849 33.567-15.031 5.06-34.517 0.132-45.395-14.383-9.875-13.23-9.863-30.574-6.23-42.583 12.297-40.623 80.58-87.15 124.441-108.256 23.946-11.485 43.842-40.76 60.938-53.279Z"
+			opacity="0.92"
+		/>
+		<path
+			fill="#f8e5b2"
+			d="M270.777 150.238c-34.697 9.26-61.826 36.687-69.112 68.952-5.34 23.75 4.011 41.922 16.843 52.68 27.986 23.454 69.947 22.417 94.673 51.94 5.94 7.058 9.82 16.61 13.856 26.07 6.03 14.195 11.272 27.241 24.99 34.848 12.765 6.977 31.824 6.173 45.111-5.164 11.981-10.194 15.792-26.443 14.88-38.687-3.011-41.495-56.168-97.175-94.585-124.63-24.474-17.385-39.281-52.662-46.656-65.009Z"
+			opacity="0.92"
+		/>
+	</g>
+	<defs>
+		<radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140 104) rotate(45) scale(520)">
+			<stop stop-color="#f8e5b2" />
+			<stop offset="0.55" stop-color="#f4f2ec" />
+			<stop offset="1" stop-color="#e8e4d4" />
+		</radialGradient>
+		<radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 210) rotate(60) scale(240)">
+			<stop stop-color="#ffffff" stop-opacity="0.9" />
+			<stop offset="1" stop-color="#f8e5b2" />
+		</radialGradient>
+		<filter id="glow" x="58" y="58" width="396" height="396" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feGaussianBlur stdDeviation="18" />
+		</filter>
+	</defs>
+</svg>

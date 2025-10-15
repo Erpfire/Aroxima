@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- Minimal, textless mark symbolizing: eye (ophthalmic), leaf/seed (greenery & nutrition), cradle (baby), health (balance) -->
+  <!-- Outer eye: precision + protection -->
+  <path d="M24 128C64 72 192 72 232 128M24 128c40 56 168 56 208 0" stroke="#1c1f1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Leaf-like iris: greenery/nutrition -->
+  <path d="M92 128c0-18 16-36 36-36s36 18 36 36-16 36-36 36-36-18-36-36Z" stroke="#4a935c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Baby motif: head + cradle (care) -->
+  <circle cx="128" cy="118" r="9" fill="#a86f3c"/>
+  <path d="M104 142Q128 168 152 142" stroke="#a86f3c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Seed/droplet: nutrition at the center -->
+  <path d="M128 148c6 0 11 6 0 17-11-11-6-17 0-17Z" fill="#f8e5b2"/>
+
+  <!-- Optional subtle alignment dot (disabled by default) -->
+  <!-- <circle cx="128" cy="128" r="2" fill="#e5dfcf"/> -->
+</svg>
+
