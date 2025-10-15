@@ -22762,7 +22762,7 @@ There are many [icon libraries for Svelte](https://www.sveltesociety.dev/package
 
 Images can have a big impact on your app's performance. For best results, you should optimize them by doing the following:
 
-- generate optimal formats like `.avif` and `.webp`
+- generate optimal formats like `.webp` and `.webp`
 - create different sizes for different screens
 - ensure that assets can be cached effectively
 

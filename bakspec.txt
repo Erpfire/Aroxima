@@ -215,14 +215,14 @@ static/images/placeholders/...
 * **Placeholders** (you’ll replace later):
 
   ```
-  /images/placeholders/hero-rebirth.avif
-  /images/placeholders/about-lab-team.avif
-  /images/placeholders/division-cardiac.avif
-  /images/placeholders/division-general.avif
-  /images/placeholders/division-ophthalmic.avif
-  /images/placeholders/product-*.avif (1..8)
-  /images/placeholders/research-lab.avif
-  /images/placeholders/india-map.avif
+  /images/placeholders/hero-rebirth.webp
+  /images/placeholders/about-lab-team.webp
+  /images/placeholders/division-cardiac.webp
+  /images/placeholders/division-general.webp
+  /images/placeholders/division-ophthalmic.webp
+  /images/placeholders/product-*.webp (1..8)
+  /images/placeholders/research-lab.webp
+  /images/placeholders/india-map.webp
   ```
 * **Alt text:** write meaningful, non-marketing descriptions (accessibility).
 
@@ -286,7 +286,7 @@ static/images/placeholders/...
 
 * `<title>Aroxima Lifesciences — Innovative solutions for a healthier world</title>`
 * Meta description: “Indian pharmaceutical manufacturer across Cardiac, General, and Ophthalmic divisions. 60+ products, 600+ clients.”
-* OpenGraph image: `/images/placeholders/og-hero.avif`
+* OpenGraph image: `/images/placeholders/og-hero.webp`
 * No health claims. Add `robots` allow. Canonical for `/`.
 
 ---

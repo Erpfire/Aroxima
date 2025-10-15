@@ -13,7 +13,7 @@
 		lead:
 			'The Aroxima catalog spans cardiac, general, and ophthalmic therapies—backed by documentation, lot traceability, and responsive partner support.',
 		image: {
-			src: '/images/placeholders/eatthepills.avif',
+			src: '/images/placeholders/eatthepills.webp',
 			alt: 'Assorted pharmaceutical packs displayed under warm daylight.'
 		},
 		stats: [

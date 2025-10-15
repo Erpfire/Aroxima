@@ -14,7 +14,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 	const heroContent = {
 		title: 'Innovative solutions for a healthier world.',
 		lead: 'In a recovering world, Aroxima Lifesciences advances modern medicine with care, courage, and science.',
-		backgroundImage: '/images/placeholders/hero-rebirth.avif',
+		backgroundImage: '/images/placeholders/hero-rebirth.webp',
 		primaryCta: {
 			label: 'Explore Divisions',
 			href: '/products'
@@ -31,7 +31,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 		body: 'Aroxima Lifesciences is an Indian pharmaceutical manufacturer committed to accessible, high-quality medicines across key therapeutic areas. We work with rigorous quality practices and a people-first mission.',
 		metrics: ['60+ Products', '320+ Team Members', '600+ Happy Clients'],
 		image: {
-			src: '/images/placeholders/about-lab-team.avif',
+			src: '/images/placeholders/about-lab-team.webp',
 			alt: 'Researchers collaborating inside a bright pharmaceutical laboratory.'
 		}
 	};
@@ -45,7 +45,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 				name: 'Cardiac Division',
 				line: 'Therapies focused on cardiovascular wellness.',
 				image: {
-					src: '/images/placeholders/division-cardiac.avif',
+					src: '/images/placeholders/division-cardiac.webp',
 					alt: 'Cardiac monitor waveform overlayed on a clinician review.'
 				},
 				href: '/products?division=cardiac'
@@ -54,7 +54,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 				name: 'General Division',
 				line: 'Everyday essentials built on rigorous standards.',
 				image: {
-					src: '/images/placeholders/division-general.avif',
+					src: '/images/placeholders/division-general.webp',
 					alt: 'Array of capsule medicines organised on a light table.'
 				},
 				href: '/products?division=general'
@@ -63,7 +63,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 				name: 'Ophthalmic Division',
 				line: 'Precise eye-care formulations.',
 				image: {
-					src: '/images/placeholders/division-ophthalmic.avif',
+					src: '/images/placeholders/division-ophthalmic.webp',
 					alt: 'Macro shot of a lab technician inspecting an optical lens.'
 				},
 				href: '/products?division=ophthalmic'
@@ -75,7 +75,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 		headline: 'Rebuilding health beyond boundaries.',
 		body: 'From supply to science, we strengthen care where it matters most—turning uncertainty into measurable outcomes for patients and partners.',
 		image: {
-			src: '/images/placeholders/vision-cinemagraph.avif',
+			src: '/images/placeholders/vision-cinemagraph.webp',
 			alt: 'Soft daylight view of a resilient city skyline with greenery emerging.'
 		}
 	};
@@ -105,7 +105,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 		body: 'Our R&D teams co-create with clinicians to refine formulations and introduce new therapies with consistent quality benchmarks.',
 		chips: ['GMP-aligned practices', 'Quality-first processes', 'Continuous improvement'],
 		image: {
-			src: '/images/placeholders/research-lab.avif',
+			src: '/images/placeholders/research-lab.webp',
 			alt: 'Scientist handling lab glassware under bright ambient light.'
 		},
 		link: {
@@ -201,7 +201,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 		property="og:description"
 		content="Indian pharmaceutical manufacturer across Cardiac, General, and Ophthalmic divisions. 60+ products, 600+ clients."
 	/>
-	<meta property="og:image" content="/images/placeholders/og-hero.avif" />
+	<meta property="og:image" content="/images/placeholders/og-hero.webp" />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
