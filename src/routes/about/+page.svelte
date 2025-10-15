@@ -25,6 +25,10 @@
       'Our offices coordinate closely with partners across India to support availability and service. The organization is led by experienced professionals across pharmacy, life sciences, and operations.',
       'We aim to keep essential therapies within reach through dependable supply and transparent communication with clinicians, distributors, and institutions.'
     ],
+    image: {
+      src: '/images/placeholders/whoweare.webp',
+      alt: 'Aroxima formulation and quality specialists collaborating inside the lab.'
+    },
     highlight: 'Accessible, dependable, and well‑documented pharmaceutical supply for real‑world care.'
   };
 
