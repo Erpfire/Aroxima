@@ -1,4 +1,4 @@
-export type DivisionId = 'cardiac' | 'general' | 'ophthalmic';
+export type DivisionId = 'cardiac' | 'diabetic' | 'general' | 'ophthalmic';
 
 export interface ProductDivision {
 	id: DivisionId;
@@ -61,6 +61,23 @@ export const divisions: ProductDivision[] = [
 			alt: 'Array of capsule and tablet packs organised on a bright surface.'
 		},
 		accent: 'rust'
+	},
+	{
+		id: 'diabetic',
+		name: 'Diabetic Division',
+		summary: 'Glucose management therapies tailored for endocrinology and primary care programs.',
+		description:
+			'Focused on chronic diabetes management with reliable release profiles, patient-friendly guidance, and supply support for long-term adherence.',
+		bulletPoints: [
+			'Protocols aligned with current ADA-referenced glycemic targets',
+			'Refill-ready pack sizes and stability data for tropical climates',
+			'Patient counselling inserts on dose titration and adherence'
+		],
+		image: {
+			src: '/images/placeholders/diabetic-division.webp',
+			alt: 'Placeholder depiction of glucose monitoring equipment alongside tablets.'
+		},
+		accent: 'sun'
 	},
 	{
 		id: 'ophthalmic',
@@ -150,7 +167,7 @@ export const catalog: ProductItem[] = [
 	{
 		id: 'metformin',
 		name: 'Metformin',
-		divisionId: 'general',
+		divisionId: 'diabetic',
 		summary: 'Used in the treatment of type 2 diabetes mellitus and polycystic ovarian syndrome (PCOS).',
 		form: 'Oral anti-diabetic tablet',
 		presentation:
@@ -164,7 +181,7 @@ export const catalog: ProductItem[] = [
 	{
 		id: 'metformin-g',
 		name: 'Metformin G Tablet',
-		divisionId: 'general',
+		divisionId: 'diabetic',
 		summary: 'Combination of two medicines used to treat type 2 diabetes mellitus in adults.',
 		form: 'Oral tablet',
 		presentation: 'Administration: Take with food as prescribed; continue as directed by the physician.',

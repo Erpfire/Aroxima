@@ -62,7 +62,7 @@
 			</p>
 		</div>
 
-		<div class="grid gap-6 rounded-[var(--radius)] border border-[var(--border)] bg-white/70 p-6 shadow-sm backdrop-blur md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+		<div class="flex flex-col gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-white/70 p-6 shadow-sm backdrop-blur">
 			<label class="flex items-center gap-3 rounded-[var(--radius)] border border-[var(--border)] bg-white/80 px-4 py-3 shadow-sm focus-within:border-[var(--life)] focus-within:ring-2 focus-within:ring-[rgba(74,147,92,0.25)]">
 				<span class="text-sm font-semibold text-[var(--muted)]">Search</span>
 				<input
@@ -74,10 +74,10 @@
 				/>
 			</label>
 
-			<div class="flex flex-wrap gap-3">
+			<div class="flex flex-wrap gap-3 md:flex-nowrap md:overflow-x-auto md:pb-1">
 				<button
 					type="button"
-					class={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline-[var(--rust)] ${activeDivision === 'all' ? 'border-[var(--life)] bg-[rgba(74,147,92,0.12)] text-[var(--life)]' : 'border-[var(--border)] bg-white/80 text-[var(--muted)] hover:border-[var(--life)] hover:text-[var(--life)]'}`}
+					class={`inline-flex flex-shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline-[var(--rust)] ${activeDivision === 'all' ? 'border-[var(--life)] bg-[rgba(74,147,92,0.12)] text-[var(--life)]' : 'border-[var(--border)] bg-white/80 text-[var(--muted)] hover:border-[var(--life)] hover:text-[var(--life)]'}`}
 					onclick={() => (activeDivision = 'all')}
 				>
 					All divisions
@@ -88,7 +88,7 @@
 				{#each divisions as division (division.id)}
 					<button
 						type="button"
-						class={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline-[var(--rust)] ${activeDivision === division.id ? 'border-[var(--life)] bg-[rgba(74,147,92,0.12)] text-[var(--life)]' : 'border-[var(--border)] bg-white/80 text-[var(--muted)] hover:border-[var(--life)] hover:text-[var(--life)]'}`}
+						class={`inline-flex flex-shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition focus-visible:outline-[var(--rust)] ${activeDivision === division.id ? 'border-[var(--life)] bg-[rgba(74,147,92,0.12)] text-[var(--life)]' : 'border-[var(--border)] bg-white/80 text-[var(--muted)] hover:border-[var(--life)] hover:text-[var(--life)]'}`}
 						onclick={() => (activeDivision = division.id)}
 					>
 						{division.name}
