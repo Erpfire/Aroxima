@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import reallogoUrl from '$lib/assets/reallogo.png?url';
+	import reallogoUrl from '$lib/assets/reallogo2.webp?url';
 	import { resolve } from '$app/paths';
 
 	type ResolveParam = Parameters<typeof resolve>[0];

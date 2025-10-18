@@ -139,6 +139,32 @@ export const catalog: ProductItem[] = [
 		}
 	},
 	{
+		id: 'opticpat',
+		name: 'Opticpat Eye Drops',
+		divisionId: 'ophthalmic',
+		summary: 'Olopatadine Hydrochloride Ophthalmic Solution 0.2% w/v.',
+		form: 'Eye drops',
+		presentation: 'Indication: Once-daily antihistamine relief for allergic conjunctivitis.',
+		tags: ['olopatadine', 'anti-allergic', 'ophthalmic care'],
+		image: {
+			src: '/images/placeholders/opticpat.webp',
+			alt: 'Placeholder dropper bottle for Opticpat antihistamine eye drops.'
+		}
+	},
+	{
+		id: 'nepam',
+		name: 'Nepam Eye Drops',
+		divisionId: 'ophthalmic',
+		summary: 'Nepafenac Ophthalmic Suspension 0.1% w/v.',
+		form: 'Ophthalmic suspension',
+		presentation: 'Indication: Reduces ocular inflammation and pain following cataract surgery.',
+		tags: ['nepafenac', 'anti-inflammatory', 'post-operative care'],
+		image: {
+			src: '/images/placeholders/nepam.webp',
+			alt: 'Placeholder depiction of Nepam nepafenac eye drops.'
+		}
+	},
+	{
 		id: 'nepam-g',
 		name: 'Nepam G Eye Drops',
 		divisionId: 'ophthalmic',
@@ -165,8 +191,8 @@ export const catalog: ProductItem[] = [
 		}
 	},
 	{
-		id: 'metformin',
-		name: 'Metformin',
+		id: 'metaformin',
+		name: 'Metaformin',
 		divisionId: 'diabetic',
 		summary: 'Used in the treatment of type 2 diabetes mellitus and polycystic ovarian syndrome (PCOS).',
 		form: 'Oral anti-diabetic tablet',
@@ -175,12 +201,12 @@ export const catalog: ProductItem[] = [
 		tags: ['type 2 diabetes', 'pcos', 'biguanide'],
 		image: {
 			src: '/images/placeholders/product-3.webp',
-			alt: 'Placeholder blister pack for Metformin tablets.'
+			alt: 'Placeholder blister pack for Metaformin tablets.'
 		}
 	},
 	{
-		id: 'metformin-g',
-		name: 'Metformin G Tablet',
+		id: 'metaformin-g',
+		name: 'Metaformin G Tablet',
 		divisionId: 'diabetic',
 		summary: 'Combination of two medicines used to treat type 2 diabetes mellitus in adults.',
 		form: 'Oral tablet',
@@ -188,7 +214,7 @@ export const catalog: ProductItem[] = [
 		tags: ['type 2 diabetes', 'combination therapy', 'gliclazide'],
 		image: {
 			src: '/images/placeholders/product-4.webp',
-			alt: 'Placeholder tablet bottle for Metformin G.'
+			alt: 'Placeholder tablet bottle for Metaformin G.'
 		}
 	},
 	{
@@ -234,7 +260,7 @@ export const supportContacts = [
 	},
 	{
 		label: 'Quality documentation',
-		phone: '+91 98110 22567',
+		phone: '+91 99105 84811',
 		email: 'quality@aroxima.com'
 	}
 ];
