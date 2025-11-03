@@ -34,7 +34,7 @@
 				{data.intro}
 			</p>
 		</div>
-		<div class="grid gap-6 md:grid-cols-3">
+		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 			{#each data.divisions as division (division.name)}
 				<a
 					class="group flex h-full flex-col overflow-hidden rounded-[var(--radius)] border border-[var(--border)] bg-white/80 shadow-[var(--shadow)] transition-transform duration-300 hover:-translate-y-2 focus-visible:-translate-y-2"

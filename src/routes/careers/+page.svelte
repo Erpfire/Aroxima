@@ -19,7 +19,7 @@
 		stats: [
 			{ value: '320+', label: 'Team members across India' },
 			{ value: '60+', label: 'Products stewarded with care' },
-			{ value: '3', label: 'Core therapeutic divisions' }
+			{ value: '4', label: 'Core therapeutic divisions' }
 		],
 		highlights: [
 			{

@@ -27,7 +27,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 	};
 
 	const aboutContent = {
-		heading: 'Science with purpose.',
+		heading: 'Growing with life.',
 		body: 'Aroxima Lifesciences is an Indian pharmaceutical manufacturer committed to accessible, high-quality medicines across key therapeutic areas. We work with rigorous quality practices and a people-first mission.',
 		metrics: ['60+ Products', '320+ Team Members', '600+ Happy Clients'],
 		image: {
@@ -58,6 +58,15 @@ import { catalog, divisions } from '$lib/products/catalog';
 					alt: 'Array of capsule medicines organised on a light table.'
 				},
 				href: '/products?division=general'
+			},
+			{
+				name: 'Diabetic Division',
+				line: 'Glucose management for better living.',
+				image: {
+					src: '/images/placeholders/division-diabetic.webp',
+					alt: 'Glucose monitoring equipment and diabetes management supplies.'
+				},
+				href: '/products?division=diabetic'
 			},
 			{
 				name: 'Ophthalmic Division',
