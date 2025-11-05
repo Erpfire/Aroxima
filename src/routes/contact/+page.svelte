@@ -132,7 +132,7 @@
 		name="description"
 		content="Contact Aroxima Lifesciences for product availability, documentation, and partnership support. Reach our Mumbai corporate office, Jamnagar registered office, or send us a message."
 	/>
-	<link rel="canonical" href="https://aroxima.com/contact" />
+	<link rel="canonical" href="https://aroxima.in/contact" />
 </svelte:head>
 
 <main>

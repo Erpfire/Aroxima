@@ -78,7 +78,7 @@
 		name="description"
 		content="Discover Aroxima Lifesciences’ cardiac, general, and ophthalmic formulations. Filter the catalog, review division capabilities, and connect with our supply desks."
 	/>
-	<link rel="canonical" href="https://aroxima.com/products" />
+	<link rel="canonical" href="https://aroxima.in/products" />
 </svelte:head>
 
 <main>

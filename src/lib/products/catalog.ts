@@ -256,11 +256,11 @@ export const supportContacts = [
 	{
 		label: 'Product availability desk',
 		phone: '+91 99105 84811',
-		email: 'supply@aroxima.com'
+		email: 'supply@aroxima.in'
 	},
 	{
 		label: 'Quality documentation',
 		phone: '+91 99105 84811',
-		email: 'quality@aroxima.com'
+		email: 'quality@aroxima.in'
 	}
 ];

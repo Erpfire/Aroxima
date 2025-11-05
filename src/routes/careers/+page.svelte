@@ -221,7 +221,7 @@
 		name="description"
 		content="Explore careers at Aroxima Lifesciences. Discover our culture, benefits, open roles across manufacturing, quality, commercial teams, and learn about our hiring process."
 	/>
-	<link rel="canonical" href="https://aroxima.com/careers" />
+	<link rel="canonical" href="https://aroxima.in/careers" />
 </svelte:head>
 
 <main>

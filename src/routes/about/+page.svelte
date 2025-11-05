@@ -107,7 +107,7 @@
 <svelte:head>
   <title>About — Aroxima Lifesciences</title>
   <meta name="description" content="Aroxima Lifesciences is an Indian pharmaceutical manufacturer focused on accessible, high‑quality formulations backed by GMP‑aligned practices and dependable supply." />
-  <link rel="canonical" href="https://aroxima.com/about" />
+  <link rel="canonical" href="https://aroxima.in/about" />
 </svelte:head>
 
 <main>

@@ -31,12 +31,9 @@
 <header class="sticky top-0 z-50 border-b border-[var(--border)] bg-white/70 backdrop-blur-md">
     <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 md:px-10">
         <!-- Brand -->
-        <a href={resolve('/' as ResolveParam)} class="inline-flex items-center gap-3 py-3" aria-label="Aroxima Lifesciences Pvt Ltd — Growing With Life">
-            <img src={reallogoUrl} alt="Aroxima Lifesciences logo" class="h-10 w-auto sm:h-12" />
-            <div class="flex flex-col">
-                <span class="font-display text-base leading-tight text-[var(--ink)] sm:text-lg md:text-xl lg:text-2xl">Aroxima Lifesciences Pvt Ltd</span>
-                <span class="text-xs leading-tight text-[var(--muted)] sm:text-sm md:text-base">Growing With Life</span>
-            </div>
+        <a href={resolve('/' as ResolveParam)} class="inline-flex items-center gap-3 py-3" aria-label="Aroxima Lifesciences — Home">
+            <img src={reallogoUrl} alt="Aroxima Lifesciences logo" class="h-10 w-auto" />
+            <span class="font-display text-xl leading-none text-[var(--ink)] md:text-2xl">Aroxima Lifesciences</span>
         </a>
 
         <!-- Desktop navigation -->

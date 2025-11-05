@@ -201,7 +201,7 @@ import { catalog, divisions } from '$lib/products/catalog';
 		content="Indian pharmaceutical manufacturer across Cardiac, General, and Ophthalmic divisions. 60+ products, 600+ clients."
 	/>
 	<meta name="robots" content="index, follow" />
-	<link rel="canonical" href="https://aroxima.com/" />
+	<link rel="canonical" href="https://aroxima.in/" />
 	<meta
 		property="og:title"
 		content="Aroxima Lifesciences — Innovative solutions for a healthier world"
