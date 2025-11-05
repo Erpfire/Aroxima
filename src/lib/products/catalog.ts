@@ -113,8 +113,8 @@ export const catalog: ProductItem[] = [
 		}
 	},
 	{
-		id: 'opticomox',
-		name: 'Opticomox Eye Drops',
+		id: 'opticmox',
+		name: 'Opticmox Eye Drops',
 		divisionId: 'ophthalmic',
 		summary: 'Moxifloxacin Eye Drops IP 0.5% w/v.',
 		form: 'Eye drops',
@@ -122,12 +122,12 @@ export const catalog: ProductItem[] = [
 		tags: ['moxifloxacin', 'ophthalmic anti-infective'],
 		image: {
 			src: '/images/placeholders/opticmox.webp',
-			alt: 'Placeholder dropper bottle representing Opticomox Eye Drops.'
+			alt: 'Placeholder dropper bottle representing Opticmox Eye Drops.'
 		}
 	},
 	{
-		id: 'opticomox-lp',
-		name: 'Opticomox LP Eye Drops',
+		id: 'opticmox-lp',
+		name: 'Opticmox LP Eye Drops',
 		divisionId: 'ophthalmic',
 		summary: 'Moxifloxacin and Loteprednol Etabonate Ophthalmic Suspension Eye Drops.',
 		form: 'Ophthalmic suspension',
@@ -135,7 +135,7 @@ export const catalog: ProductItem[] = [
 		tags: ['moxifloxacin', 'loteprednol'],
 		image: {
 			src: '/images/placeholders/opticmoxlp.webp',
-			alt: 'Placeholder ophthalmic suspension bottle for Opticomox LP.'
+			alt: 'Placeholder ophthalmic suspension bottle for Opticmox LP.'
 		}
 	},
 	{
